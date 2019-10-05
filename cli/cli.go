@@ -165,7 +165,7 @@ func (cli *CommandLine) Run() {
 
 	nodeID := os.Getenv("NODE_ID")
 	if nodeID == "" {
-		fmt.Println("NODE_ID inv is not set!")
+		fmt.Println("NODE_ID env var is not set! Set it with set/export NODE_ID=[your id]")
 		runtime.Goexit()
 	}
 
